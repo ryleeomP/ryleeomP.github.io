@@ -24,11 +24,17 @@
 </style>
 
 <body>
-       <iframe class="pdf" 
+      <!-- <iframe class="pdf" 
                 src=
 "resume.pdf"
             width="800" height="500">
-        </iframe>
+        </iframe> -->
+    <iframe id="theFrame" src="resume.pdf" style="height:1000px; width:100%;"></iframe>
+<script>
+document.getElementById("theFrame").contentWindow.onload = function() {
+    this.document.getElementsByTagName("img")[0].style.width="100%";
+};
+</script>
 
 </body>
 </html>
