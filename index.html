@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
 <body>
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   h1,
+    h3 {
+        text-align: center;
+    }
 
-<h1>changed PDF 2 </h1>
-<iframe src="resume.pdf" style="width: 100%;height: 1000%;border: none;"></iframe>
+    h1 {
+        color: black;
+    }
+</style>
+
+<body>
+        <iframe class="pdf" 
+                src=
+"resume.pdf"
+            width="800" height="500">
+        </iframe>
 
 </body>
 </html>
